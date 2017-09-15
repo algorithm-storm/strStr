@@ -11,11 +11,8 @@ public class Solution {
             return -1;
         }
 
-
         for(int i = 0 ; i < source.length() - target.length() + 1 ; i++) {
-
             int j = 0;
-
             for (; j < target.length(); j++) {
                 if (source.charAt(i + j) != target.charAt(j)) {
                     break;
@@ -24,9 +21,6 @@ public class Solution {
             if (j == target.length()) {
                 return i;
             }
-
-
-
             //wrong !
             //cannot use equal
             //because if the position of j is not equal to i
@@ -38,13 +32,9 @@ public class Solution {
             if (target.length() == 0) {
                 return i;
             }
-
             int j = 0;
-
             for (; j < target.length(); j++) {
-
                 if (source.charAt(i + j) == target.charAt(j)) {
-
                     if (j + 1 == target.length()) {
                         return i;
                     }
@@ -53,7 +43,6 @@ public class Solution {
 
 
         }
-
         return -1;
     }
 
